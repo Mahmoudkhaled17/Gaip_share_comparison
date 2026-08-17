@@ -61,8 +61,8 @@ export default function App() {
   if (status === 'loading') {
     return (
       <Shell>
-        <div className="h-56 flex flex-col items-center justify-center gap-3 text-slate-400">
-          <Loader2 className="w-8 h-8 animate-spin text-emerald-400" />
+        <div className="h-56 flex flex-col items-center justify-center gap-3 text-[#815b5b]">
+          <Loader2 className="w-8 h-8 animate-spin text-[#594545]" />
           <p className="text-sm font-bold">جاري تحميل التقرير المشترك...</p>
         </div>
       </Shell>
@@ -98,12 +98,12 @@ export default function App() {
 
 function Shell({ children }) {
   return (
-    <div className="h-full bg-slate-950 font-sans text-slate-200 overflow-hidden relative">
+    <div className="h-full bg-[#FBF5DD] font-sans text-[#594545] overflow-hidden relative">
       <div className="absolute inset-0 flex items-center justify-center p-6">
-        <div className="w-full max-w-lg bg-slate-900 border border-slate-800 rounded-3xl p-8">
+        <div className="w-full max-w-lg bg-[#fff8ea] border border-[#D4CD9B] rounded-3xl p-8 shadow-sm">
           <div className="flex items-center gap-3 mb-6">
-            <span className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse" />
-            <h2 className="text-lg font-black text-slate-100 uppercase tracking-wide">
+            <span className="w-3 h-3 rounded-full bg-[#815b5b] animate-pulse" />
+            <h2 className="text-lg font-black text-[#594545] uppercase tracking-wide">
               GAIP Shared Comparison Viewer
             </h2>
           </div>
@@ -117,11 +117,11 @@ function Shell({ children }) {
 function MessageBox({ icon, title, desc }) {
   return (
     <div className="flex flex-col items-center text-center gap-3 py-4">
-      <div className="bg-slate-800/60 border border-slate-700 p-3 rounded-2xl text-slate-300">
+      <div className="bg-[#D4CD9B]/30 border border-[#D4CD9B] p-3 rounded-2xl text-[#815b5b]">
         {icon}
       </div>
-      <p className="text-sm font-black text-slate-200">{title}</p>
-      <p className="text-xs text-slate-500 leading-relaxed">{desc}</p>
+      <p className="text-sm font-black text-[#594545]">{title}</p>
+      <p className="text-xs text-[#9e7676] leading-relaxed">{desc}</p>
     </div>
   );
 }
